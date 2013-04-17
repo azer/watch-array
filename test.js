@@ -1,0 +1,19 @@
+var watchArray = require("./");
+
+it('is the readme example', function(done){
+
+  var people = ['Joe', 'Smith'];
+
+  watchArray(people, function(update){ // or watchArray.once(people, function(update){
+
+    expect(update.add).to.deep.equal({ 1: 'Taylor', 2: 'Brown' });
+    expect(update.remove).to.deep.equal([0]);
+
+    done();
+
+  });
+
+  people.shift();
+  people.push('Taylor', 'Brown');
+
+});
