@@ -29,7 +29,7 @@ $ npm install watch-array
 
 ## How It Works?
 
-* It mixes the given array with [new-pubsub](http://github.com/azer/new-pubsub). So you actually have a minimalistic pub/sub API in the array.
+* It mixes the given array with [new-pubsub](http://github.com/azer/new-pubsub). 
 * It doesn't add new methods or change the behaviour of existing ones.
 * It overrides mutable methods like `push`, `splice` etc to emit the changes.
 
