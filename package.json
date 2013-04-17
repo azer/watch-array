@@ -16,6 +16,13 @@
     "url": "git@github.com:azer/watch-array.git",
     "type": "git"
   },
+  "keywords": [
+    "array",
+    "list",
+    "watch",
+    "pubsub",
+    "event"
+  ],
   "author": "Azer Koçulu <azer@kodfabrik.com>",
   "license": "BSD"
 }
