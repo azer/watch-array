@@ -1,6 +1,6 @@
 ## watch-array
 
-Lets you subscribe to any changes on native JavaScript arrays.
+Lets you subscribe to any changes on native JavaScript arrays. See also: [new-list](http://github.com/azer/new-list)
 
 ```js
 watchArray = require('watch-array')
