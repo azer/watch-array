@@ -1,6 +1,6 @@
 {
   "name": "watch-array",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Watch any changes on arrays",
   "main": "index.js",
   "scripts": {
