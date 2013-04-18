@@ -7,7 +7,7 @@
     "test": "fox"
   },
   "dependencies": {
-    "new-list": "*"
+    "new-list": "0.0.5"
   },
   "devDependencies": {
     "fox": "*"
