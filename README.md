@@ -59,7 +59,17 @@ people.publish({ person: people[1], index: 1 })
 ## How It Works?
 
 * It mixes the given array with [new-pubsub](http://github.com/azer/new-pubsub). 
-* It doesn't add new methods (except the pubsub ones above) or change the behaviour of existing ones.
 * It overrides mutable methods like `push`, `splice` etc to emit the changes.
+
+## Caveats
+
+Following changes won't be catched;
+
+```js
+people[people.length] = "Fred";
+people[0] = "Barney";
+delete people[0];
+```
+
 
 ![](https://dl.dropboxusercontent.com/s/vg71zdk29kckx04/npmel_12.jpg)
