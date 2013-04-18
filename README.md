@@ -14,6 +14,9 @@ watchArray(people, function(update){ // or watchArray.once(people, function(upda
 
     update.remove
     // => [0]
+    
+    update.sort
+    // => undefined
 
 })
 
@@ -25,6 +28,32 @@ people.push('Taylor', 'Brown')
 
 ```bash
 $ npm install watch-array
+```
+
+## Subscribing To Deeper Changes
+
+You can easily define your custom type of updates and distribute them using the minimalistic pubsub interface mixed to
+any array that you watch *(see [new-list](http://github.com/azer/new-list) for defining native arrays with Pub/Sub by default):*
+
+```js
+people = [{ name: 'Joe', age: 27 }, { name: 'Smith', age: 19 }]
+
+watchArray(people, function(update){
+    
+  if (update.person) {
+
+    update.index
+    // => 1
+    update.person
+    // => { name: 'Smith', age: 20 }
+
+  }
+  
+})
+
+people[1].age = 20
+
+people.publish({ person: people[1], index: 1 })
 ```
 
 ## How It Works?
