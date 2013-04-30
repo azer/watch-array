@@ -59,7 +59,7 @@ people.publish({ person: people[1], index: 1 })
 
 ## How It Works?
 
-* It mixes the given array with [new-pubsub](http://github.com/azer/new-pubsub). 
+* It mixes the given array with [new-pubsub](http://github.com/azer/pubsub). 
 * It overrides mutable methods like `push`, `splice` etc to emit the changes.
 
 ## Caveats
