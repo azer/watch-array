@@ -28,7 +28,7 @@ people.push('Taylor', 'Brown')
 ## Install
 
 ```bash
-$ npm install watch-array
+$ npm install array
 ```
 
 ## Subscribing To Deeper Changes
